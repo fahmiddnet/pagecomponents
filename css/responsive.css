@@ -1,0 +1,54 @@
+/************IPad**************/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+    body {
+        background-color: rgb(3, 78, 13);
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: brown !important;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    
+
+
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: rgb(16, 123, 100) !important;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    
+
+
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    body{
+        background-color: rgb(238, 255, 0);
+    }
+    
+
+}
+

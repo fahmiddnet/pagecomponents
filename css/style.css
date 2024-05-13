@@ -1,0 +1,1533 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  font-size: 13px;
+  line-height: 23px;
+  color: #999999;
+}
+
+a {
+  text-decoration: none;
+  color: #21c2f8;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul,ol{list-style:none;margin:0;padding:0;}
+ol, ul{padding: 0; margin: 0;}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.img-area-res{
+  width: 100%;
+  height: auto;
+}
+.fh-position-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  padding: 0 5%;
+}
+.fh-d-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 5%;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+
+/* text  */
+.title-small{
+  color: #2f383d;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+.title-medium{
+  color: #2f383d;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.title-smaller{
+  color: #2f383d;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.section-padding{
+  padding: 100px 0;
+}
+
+
+/*------------ '''''''''start::sc-tipography page design'''''''''----------------- */
+
+.navigation{
+  background-color: #eff5f7;
+}
+.navigation .title-small {
+  margin: 5px 0;
+  padding: 15px 0;
+  font-weight: 200;
+}
+.bradcum-area{
+  padding: 10px 0;
+  margin: 10px 0;
+  float: right;
+}
+.bradcum-area ul li{
+  float: left;
+  padding-left: 10px;
+  padding: 10px 0;
+}
+.bradcum-area ul li i{
+  padding:  0  5px;
+  font-size: 10px;
+  line-height: 15px;
+  background-color: #fff;
+  border: 1px solid #999999;
+  border-radius: 3px;
+  margin: 0 10px;
+}
+.bradcum-area ul li a:hover{
+  color: rgb(87, 166, 186);
+}
+.bradcum-area ul li:nth-last-child(1) a{
+  color: #9aa7af;
+}
+.heading-style-area .title-small{
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 200;
+}
+
+/* .default-sample-page {
+
+} */
+
+.default-sample-page h1,
+.default-sample-page h2,
+.default-sample-page h3,
+.default-sample-page h4,
+.default-sample-page h5,
+.default-sample-page h6{
+  color: #353943;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+.default-sample-page p{
+  color: #99abb7;
+  font-size: 13px;
+  line-height: 20px;
+}
+.default-sample-page h1{
+  font-size: 24px;
+}
+.default-sample-page h2{
+  font-size: 20px;
+}
+.default-sample-page h3{
+  font-size: 18px;
+}
+.default-sample-page h4{
+  font-size: 16px;
+}
+.default-sample-page h5{
+  font-size: 14px;
+}
+.default-sample-page h6{
+  font-size: 13px;
+}
+
+.about-more .textarea strong {
+  color: #000;
+}
+.about-more .textarea a{
+  text-decoration: underline;
+}
+.about-more .textarea p::selection{
+  background-color: #21c2f8;
+}
+
+.bullet-list ol li,
+.bullet-list ul li{
+  position: relative;
+  padding: 5px 0;
+}
+
+.marker-arrow ul li::before{
+  font-family: FontAwesome;
+  content: "\f138";
+  padding-right: 10px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.marker-arrow-simple ul li::before{
+  font-family: FontAwesome;
+  content: "\f0da";
+  padding-right: 10px;
+  color: #84c80d;
+  vertical-align: middle;
+}
+.maker-squire ul li::before{
+  font-family: FontAwesome;
+  content: "\f0c8";
+  padding-right: 10px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.marker-arrow-circle ul li::before{
+  font-family: FontAwesome;
+  content: "\f061";
+  margin-right: 10px;
+  padding: 5px 6px;
+  border-radius: 50px;
+  background-color: #21c2f8;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.custom-counter li {
+  counter-increment: step-counter;
+}
+.custom-counter li::before {
+  margin-right: 10px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  padding: 5px 9px;
+  border-radius: 50px;
+}
+.maker-color-blue li::before{
+    content: counter(step-counter);
+    background-color: #21c2f8;
+  }
+.maker-color-green li::before{
+  content: counter(step-counter,upper-alpha);
+  background-color: #84c80d;
+}
+
+.maker-color-gray li::before{
+  content: counter(step-counter,lower-alpha);
+  background-color: #aaaaaa;
+}
+.maker-color-black li::before{
+  content: counter(step-counter,upper-roman);
+  background-color: #000000;
+}
+/*----------------------------------- '''''''''end::sc-tipography page design''''''''' --------------------------------------------- */
+
+
+
+/*-----------------START::Introducting-box page --------------------- */
+.box{
+  cursor: pointer;
+  /* margin-bottom: 200px; */
+}
+.box:hover h4{
+  transition: 0.4s;
+}
+/*=======================================
+  start::basic circle card  
+ ========================================*/
+.basic-circle-card{
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.basic-circle-card .img-area{
+  margin:  0 auto;
+  width: 50px;
+  height: 50px;
+  background-color: #21c2f8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+.basic-circle-card .img-area i{
+  font-size: 22px;
+  color: #fff;
+}
+.basic-circle-card a{
+  text-decoration: underline;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+.basic-circle-card a:hover{
+  color: #000;
+}
+.basic-circle-card:hover .img-area{
+    background-color: #000;
+}
+.basic-circle-card:hover h4{
+  color: #21c2f8;
+}
+
+/*=======================================
+ end::basic circle card  
+ ========================================*/
+
+ /*=======================================
+ start::small rectengular card  
+ ========================================*/
+.small-rectengular-card {
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+.small-rectengular-card .img-area{
+  float: left;
+  width: 20%;
+  background-color: #21c2f8;
+  text-align: center;
+  padding: 15px 0;
+  color: #fff;
+  transition: 0.4s;
+}
+.small-rectengular-card .img-area i{
+  font-size: 30px;
+}
+.small-rectengular-card .textarea{
+  float: left;
+  width: 64%;
+  padding-left:5%;
+}
+.small-rectengular-card .textarea p{
+  text-align: left;
+}
+.small-rectengular-card:hover .img-area{
+  background-color: #000;
+}
+
+.small-rectengular-card:hover h4{
+  color: #21c2f8;
+}
+/*=======================================
+ end::small rectengular card   
+ ========================================*/
+
+/*=======================================
+ start::owl carosule style  
+ ========================================*/
+
+/* .owl-carousel-area .owl-carousel {
+  background-color: #84c80d;
+} */
+
+.owl-carousel-area .owl-carousel .item {
+  height: 200px;
+  transition: transform 0.5s;
+  -ms-transform: scale(1); 
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  z-index: -1;
+}
+
+.owl-carousel-area .owl-carousel .item:hover {
+  transition: transform 0.5s;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 9999;
+}
+
+.owl-carousel-area .owl-carousel .item-inner-wrapper {
+  position: relative;
+}
+
+.owl-carousel-area .owl-carousel .owl-card:hover {
+  background-color: red;
+  padding-bottom: 70px;
+}
+
+.owl-carousel-area .owl-carousel .owl-card{
+  background-color: yellow;
+  height: 200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.owl-carousel-area .owl-carousel .owl-card .img-area{
+  position: relative;
+}
+.owl-carousel-area .owl-card .hex {
+  width: 90px;
+  height: 45px;
+  background-color: #21c2f8;
+  border-color: #21c2f8;
+  position: relative;
+  display: inline-block;
+  transition: 0.4s;
+}
+.owl-carousel-area .owl-card:hover .hex{
+  background-color: #000000;
+  border-color: #000000; 
+} 
+.owl-carousel-area .owl-card:hover h4{
+  color: #21c2f8;
+}
+
+.owl-carousel-area .owl-card .hex::before {
+	content: " ";
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid;
+	border-color: inherit;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	position: absolute;
+	top: -30px;
+}
+.owl-carousel-area .owl-card .hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  border-top: 30px solid;
+  border-color: inherit;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+.owl-carousel-area .owl-card .hex i{
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+
+.owl-carousel-area .owl-carousel.owl-theme .owl-nav .owl-prev,
+.owl-carousel-area .owl-carousel.owl-theme .owl-nav .owl-next {
+  /* margin-top: -90px; */
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+.owl-carousel-area .owl-nav span{
+  font-size: 22px;
+  line-height: 22px;
+
+}
+.owl-carousel-area .owl-carousel.owl-theme .owl-nav .owl-prev{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #21c2f8;
+  color: #21c2f8;
+  border-radius: 50%;
+  left: -70px;
+}
+.owl-carousel-area .owl-carousel.owl-theme .owl-nav .owl-next{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #21c2f8;
+  color: #21c2f8;
+  border-radius: 50%;
+  right: -70px;
+}
+.owl-carousel-area .owl-carousel .owl-item.active{
+  z-index: 1;
+  padding-bottom: 15px;
+}
+
+.owl-carousel-area .owl-carousel .owl-item.active:hover{
+    z-index: 2;
+}
+
+/*==========================================
+ end::owl .owl-carousel style  
+ ===========================================*/
+
+
+ /*=======================================
+ Start::basic rectengular card  
+ ========================================*/
+
+.basic-rectengular-card{
+  padding: 0 2%;
+  margin-bottom: 40px;
+}
+
+.basic-rectengular-card .img-area{
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #21c2f8;
+  margin-bottom: 20px;
+  transition: 0.2s;
+}
+.basic-rectengular-card .img-area i{
+  font-size: 25px;
+  color: #21c2f8;
+}
+.basic-rectengular-card .textarea{
+  text-align: center;
+}
+.basic-rectengular-card:hover .img-area{
+  border: 1px solid #000000;
+  outline: 1px solid #000;
+  outline-offset: 2px;
+}
+.basic-rectengular-card:hover i{
+  color: #000000;
+}
+.basic-rectengular-card:hover h4{
+  color: #21c2f8;
+}
+.btn-small{
+  display: block;
+  text-align: center;
+}
+.btn-small a{
+  padding: 10px 15px;
+  background-color: #21c2f8;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.btn-small a:hover{
+  background-color: #000;
+}
+
+/*=======================================
+ end::basic rectengular card  
+ ========================================*/
+
+ /*=======================================
+ start:: hexavariation card 
+ ========================================*/
+
+.hexagon-variation-card{
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin-bottom: 100px;
+}
+.hexagon-variation-card .img-area{
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.hexagon-variation-card .hex {
+  width: 90px;
+  height: 45px;
+  background-color: #21c2f8;
+  border-color: #21c2f8;
+  position: relative;
+  display: inline-block;
+  transition: 0.4s;
+}
+.hexagon-variation-card:hover .hex{
+  background-color: #000000;
+  border-color: #000000; 
+} 
+.hexagon-variation-card:hover h4{
+  color: #21c2f8;
+}
+.hexagon-variation-card .hex::before {
+	content: " ";
+	width: 0;
+	height: 0;
+	border-bottom: 30px solid;
+	border-color: inherit;
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	position: absolute;
+	top: -30px;
+}
+.hexagon-variation-card .hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  border-top: 30px solid;
+  border-color: inherit;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+}
+
+.hexagon-variation-card .img-area i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+}
+.hexagon-variation-card .textarea{
+  text-align: center;
+  padding:60px 30px;
+}
+.hexagon-variation-card .btn-small{
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+/*=======================================
+end:: hexavariation card 
+========================================*/
+
+
+/*=======================================
+start::basic-lg-circle-card
+========================================*/
+.basic-lg-circle-card{
+  width: 100%;
+  padding: 30px;
+}
+.basic-lg-circle-card .img-area{
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+.basic-lg-circle-card:hover .img-area{
+  outline: 15px solid #cbeef9;
+}
+.basic-lg-circle-card .img-area i{
+  font-size: 45px;
+  line-height: 45px;
+  color: #fff;
+}
+.basic-lg-circle-card .textarea{
+  text-align: center;
+}
+
+/*=======================================
+end::basic-lg-circle-card
+========================================*/
+
+/*===========================================
+start::basic-card-variation-one
+============================================*/
+
+.basic-card-variation-one{
+  position: relative;
+  padding: 30px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  margin-bottom: 50px;
+}
+.basic-card-variation-one .img-area{
+  width: 60px;
+  height: 60px;
+  background-color: #21c2f8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  transform: translate(-50%,0);
+  transition: 0.4s;
+}
+.basic-card-variation-one:hover .img-area{
+  background-color: #000000;
+}
+.basic-card-variation-one .img-area i{
+  font-size: 24px;
+  color: #fff;
+}
+.basic-card-variation-one .textarea{
+  text-align: center;
+  padding: 20px 10px;
+}
+/*===========================================
+end::basic-card-variation-one
+============================================*/
+
+
+/*===========================================
+start::rectengular-card-hover-effect  
+============================================*/
+.rectengular-card-hover-effect{
+  height: 160px;
+  width: 100%;
+  position: relative;
+}
+.rectengular-card-hover-effect .ovarlay{
+  opacity: 0;
+  transform: scaleY(1.2);
+  height: 160px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #21c2f8;
+  transition:all ease-in-out 0.9s;
+}
+.rectengular-card-hover-effect:hover .ovarlay{
+  opacity: 1;
+}
+.rectengular-card-hover-effect .ovarlay::before{
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  /* transform: translate(0,-50%); */
+  width: 0;
+  border-bottom: 10px solid #21c2f8;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-90deg);
+}
+
+.rectengular-card-hover-effect .img-area{
+  margin: 0 auto;
+  width: 50px;
+  height: 75px;
+  background-color: #000;
+  position: relative;
+}
+
+.rectengular-card-hover-effect .img-area i{
+  font-size: 22px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%,0);
+}
+.rectengular-card-hover-effect .textarea{
+  text-align: center;
+}
+.rectengular-card-hover-effect .textarea h4{
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.rectengular-card-hover-effect .btn-small a{
+  background-color: transparent;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 2px 8px;
+  border-radius: 0;
+  text-decoration: none;
+}
+.rectengular-card-hover-effect .btn-small a:hover{
+  background-color: #000;
+  color: #fff;
+  border: none;
+} 
+
+/*===========================================
+end::rectengular-card-hover-effect  
+============================================*/
+
+ 
+/*===========================================
+start::img-left-card-v1  
+============================================*/
+.img-left-card-v1{
+  margin-bottom: 40px;
+}
+.img-left-card-v1 .img-area{
+  float: left;
+  width: 15%;
+  height: 70px;
+  background-color: #21c2f8;
+  color: #fff;
+  position: relative;
+  transition: all 0.4s;
+}
+.img-left-card-v1:hover .img-area{
+  background-color: #000;
+}
+.img-left-card-v1 .img-area i{
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%,0);
+  font-size: 22px;
+}
+.img-left-card-v1 .textarea{
+  float: left;
+  width: 72%;
+  padding-left: 5%;
+}
+.img-left-card-v1:hover .textarea h4{
+  color: #21c2f8;
+}
+/*===========================================
+end::img-left-card-v1  
+============================================*/
+
+/*===========================================
+start::img-left-card-v2  
+============================================*/
+.img-left-card-v2{
+  margin-bottom: 40px;
+}
+.img-left-card-v2 .img-area{
+  float: left;
+  width: 20%;
+  padding: 30px;
+  background-color: #21c2f8;
+  color: #fff;
+  position: relative;
+  transition: all 0.4s;
+}
+.img-left-card-v2 .img-area::after{
+  content: "";
+  width: 0;
+  border-bottom: 20px solid #21c2f8;
+  border-left: 20px solid transparent;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  transform: rotate(180deg);
+  transition: 0.4s;
+}
+.img-left-card-v2:hover .img-area::after{
+  border-bottom: 30px solid #000000;
+}
+.img-left-card-v2:hover .img-area{
+  background-color: #000;
+}
+.img-left-card-v2 .img-area i{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 22px;
+}
+.img-left-card-v2 .textarea{
+  float: left;
+  width: 72%;
+  padding-left: 5%;
+}
+.img-left-card-v2:hover .textarea h4{
+  color: #21c2f8;
+}
+/*===========================================
+end::img-left-card-v2  
+============================================*/
+
+/*==========================================
+ START::Services overlay style  
+ ===========================================*/
+
+.service-ovalshape{
+  margin: 0 auto 100px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  background-color: #21c2f8;
+  color: #fff;
+  border-radius: 100%;
+  transition: 0.4s;
+}
+.service-ovalshape:hover{
+  transform: scale(1.15);
+}
+.service-ovalshape .img-area {
+	position: absolute;
+	right: 20px;
+	top: -20px;
+	height: 90px;
+	border-radius: 100%;
+	background-color: #fff;
+	color: #21c2f8;
+	border: 1px solid #21c2f8;
+	outline: 3px solid #fff;
+	transition: 0.4s;
+	width: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.service-ovalshape:hover .img-area{
+  background-color: #21c2f8;
+  color: #fff;
+}
+.service-ovalshape .img-area i{
+  font-size: 34px;
+}
+.service-ovalshape .textarea {
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+  margin-top: 20px;
+}
+.service-ovalshape .textarea h4{
+  color: #fff;
+}
+.service-ovalshape:hover{
+  background-color: #000;
+}
+.service-ovalshape .btn-small a{
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.service-ovalshape .btn-small a:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/*==========================================
+ END::Services overlay style  
+ ===========================================*/
+
+
+/*----------------- END::Introducting-box page --------------------- */
+
+
+
+
+/*----------------- START::skill-progress page --------------------- */
+
+/*==========================================
+ start::baisc-rectangle-progress
+ ===========================================*/
+ .section-title{
+  padding: 120px 0 60px;
+ }
+.baisc-rectangle-progress{
+  background-color: #dfe5e9;
+  border-radius: 0;
+  height: 30px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.baisc-rectangle-progress .progress-bar{
+  background-color: #21c2f8;
+  padding: 3px 0;
+}
+.baisc-rectangle-progress .progress-bar h6{
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.baisc-rectangle-progress .progress-bar span{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0,-50%);
+  color: #9aa7af;
+}
+
+/*==========================================
+ start::skill-full-circle
+ ===========================================*/
+ 
+/*==========================================
+ end::skill-full-circle
+ ===========================================*/
+
+/*==========================================
+ start::skill-section 
+ ===========================================*/
+.skill-circle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  text-align: center;
+}
+
+ @keyframes progress {
+  0% { --percentage: 0; }
+  100% { --percentage: var(--value); }
+}
+
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.skill-circle [role="progressbar"] {
+  --percentage: var(--value);
+  --secondary: #dadada;
+  --size: 150px;
+  animation: progress 2s 0.5s forwards;
+  -webkit-animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.skill-circle [role="progressbar"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+.skill-circle [role="progressbar"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: #adafb6;
+}
+
+ /*==========================================
+ end::skill-section 
+ ===========================================*/
+
+
+/*==========================================
+start::Rectangle-pregress section
+===========================================*/
+
+.rectangle-pregress{
+  margin-bottom: 60px;
+  border-radius: 2px;
+  padding: 4px;
+  position: relative;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  overflow: visible;
+}
+.rectangle-pregress .progress-bar{
+  position: relative;
+  overflow: visible;
+  background-color: #21c2f8;
+  cursor: pointer;
+}
+.rectangle-pregress .progress-bar::after{
+  content: '';
+  background-color: #21c2f8;
+  border: 5px solid #fff;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+}
+.rectangle-pregress .progress-bar:hover .popOver{
+  opacity: 1;
+}
+.rectangle-pregress .progress-bar .popOver{
+  display: inline;
+  position: absolute;
+  right: -15px;
+  top: -50px;
+  padding: 4px 10px;
+  background-color: #21c2f8;
+  color: #fff;
+  opacity: 0;
+}
+.rectangle-pregress .progress-bar h6{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  
+}
+.rectangle-pregress .progress-bar .popOver span{
+  position: relative;
+}
+.rectangle-pregress .progress-bar .popOver span::after {
+  content: "";
+  width: 0;
+  border-top: 10px solid #21c2f8;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%,0);
+}
+
+/*==========================================
+end::Rectangle-pregress section
+===========================================*/
+
+/*----------------- END::skill-progress page --------------------- */
+
+
+
+/*----------------- START::Contact page --------------------- */
+
+/*=====================================================
+ start::contact page 2  
+ ======================================================*/
+.address-section{
+  padding: 110px 0 30px;
+}
+.address-section .map-area{
+  height: 450px;
+  margin-bottom: 60px;
+}
+
+.contact-text-block .list-area{
+  margin-bottom: 20px;
+}
+.contact-text-block .list-area ul li{
+  margin-bottom: 10px;
+}
+.contact-text-block .list-area ul li span{
+  padding-left: 10px;
+}
+
+.social-icons i{
+  font-size: 30px;
+  margin-right: 5px;
+}
+.social-icons i:hover{
+  color: #21c2f8;
+  cursor: pointer;
+}
+.contact-form-block .form-input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding:10px;
+  border: 1px solid #99abb7;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contact-form-block .form-icon{
+  position: relative;
+}
+.contact-form-block .form-icon::after {
+  font-family: "FontAwesome";
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 18%;
+}
+.contact-form-block .form-name::after {
+  content: "\f007";
+}
+.contact-form-block .form-email::after {
+  content: "\f0e0";
+}
+
+
+.contact-form-block .btn-learge{
+    display: block;
+    text-align: center;
+}
+.contact-form-block .btn-learge a{
+  display: block;
+  background-color: #21c2f8;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 10px 0;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.contact-form-block .btn-learge a:hover{
+  background-color: #067ea6;
+}
+/*=====================================================
+ end::contact page 2  
+ ======================================================*/
+
+/*=====================================================
+ start::contact page 3  
+ ======================================================*/
+.contact-text-block-varsion2 .img-left-card-v2 {
+  margin:0;
+}
+
+.contact-form-block .form-subject::after{
+  content: "\f086";
+}
+.form-left-content{
+  float: left;
+  width: 45%;
+}
+.form-right-content{
+  float: left;
+  width: 45%;
+  margin-left: 5%;
+}
+.varsion-3 .img-left-card-v2 {
+  margin-bottom: 0px;
+}
+.varsion-3 .btn-learge{
+  text-align: end;
+}
+.varsion-3 .btn-learge a{
+  display: inline-block;
+  padding: 8px 25px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+/*=====================================================
+ end::contact page 3  
+ ======================================================*/
+
+ .map-right-section .map-area{
+  height: 200px;
+  margin-bottom: 40px;
+ }
+ .contact-address-area .img-area{
+  float: left;
+  width: 10%;
+  height: 100%;
+ }
+ .contact-address-area .img-area i{
+  font-size: 16px;
+  line-height: 16px;
+  padding: 8px 10px;
+  background-color: #21c2f8;
+  border-radius: 50%;
+  color: #fff;
+  margin-top: 8px;
+ }
+ .contact-address-area .text-area{
+  float: left;
+  width: 80%;
+  margin-left: 8%;
+  height: 100%;
+ }
+ .contact-address-area .text-area .title-small{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+ }
+
+/*----------------- END::Contact page  --------------------- */
+
+
+/*----------------- Start::Portfolio page  --------------------- */
+
+/*=====================================================
+ start::portfolio 1  
+ ======================================================*/
+
+/* Controls
+---------------------------------------------------------------------- */
+
+.mixcontrols {
+  padding: 1rem 0;
+  font-size: 0.1px;
+}
+
+.mixcontrol {
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid rgb(238, 243, 243);
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 8px 15px;
+  color: rgb(0, 0, 0);
+  transition: background 150ms;
+}
+
+.mixcontrol:hover {
+  background: #21c2f8;
+}
+
+.mixitup-control-active {
+  color: #fff;
+  background: #21c2f8;
+}
+
+
+.mixcontrol:first-of-type {
+  border-radius: 3px 0 0 3px;
+}
+
+.mixcontrol:last-of-type {
+  border-radius: 0 3px 3px 0;
+}
+
+.mixcontrol[data-filter] + .control[data-sort] {
+  margin-left: .75rem;
+}
+
+/* mixcontainer
+---------------------------------------------------------------------- */
+
+.mixcontainer {
+  margin-left: -20px;
+  padding: 1rem 0;
+  text-align: start;
+  font-size: 12px;
+}
+
+.mixcontainer:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+
+.mix,
+.gap {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mix {
+ background: #000000;
+ color: #fff;
+ /* border-top: .5rem solid currentColor; */
+ border-radius: 2px;
+ margin-bottom: 1rem;
+ position: relative;
+}
+
+.mix.design{
+  margin-left: 20px;
+  width: 45%;
+  /* height: 510px; */
+}
+
+/* big card design  */
+.design-card{
+  cursor: pointer;
+  color: #000;
+  background-color: #eff5f7;
+  transition: all ease-in-out .4s;
+}
+.design-card:hover{
+  background-color: #2f383d;
+  color: #fff;
+}
+.design-card:hover .card-content::before{
+  opacity: 1;
+}
+.design-card .img-area{
+  width: 100%;
+  height: auto;
+}
+.design-card .img-area .img-res{
+  width: 100%;
+}
+.design-card  .card-content{
+  position: relative;
+  padding:20px 30px;
+  border-bottom: 1px solid #dee8ec;
+}
+.design-card  .card-content::before{
+  content: "";
+  width: 0;
+  border-bottom: 20px solid #2f383d;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  right: 50px;
+  top: -20px;
+  opacity: 0;
+  transition: all ease-in 0.4s;
+}
+.design-card .card-footer{
+  display: flex;
+  justify-content: space-between;
+  padding:20px 30px;
+}
+.design-card .card-footer .star{
+  color: #21c2f8;
+}
+.design-card .card-footer .star i:last-of-type{
+  color: #c2c2c2;
+}
+/* big card design  */
+
+/* small card design  */
+.mini-card-design{
+  cursor: pointer;
+  color: #000;
+  background-color: #eff5f7;
+  transition: all ease-in-out .7s;
+}
+.mini-card-design:hover{
+  color: #eff5f7;
+  background-color: #2f383d;
+}
+.mini-card-design:hover .card-overlay{
+  opacity: 1;
+}
+.mini-card-design:hover .mini-card-content::before{
+  opacity: 1;
+}
+.card-header{
+  position: relative;
+  height: 170px;
+}
+.mini-card-design .card-overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #067ea6;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all ease-in 0.7s;
+}
+.mini-card-design .card-overlay .over-icons i{
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+}
+.mini-card-design .mini-card-content{
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+.mini-card-design .mini-card-content::before{
+  content: "";
+  width: 0;
+  border-bottom: 20px solid #2f383d;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  left: 50%;
+  top: -20px;
+  transform: translate(-50%,0);
+  opacity: 0;
+  transition: all ease-in 0.7s;
+}
+.mini-card-design .mini-card-content h4{
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 0;
+}
+/* small card design  */
+
+
+.mix.market{
+  margin-left: 20px;
+  width: 20%;
+  height: auto;
+}
+.mix.adsnetwork{
+  margin-left: 20px;
+  width: 20%;
+  /* height: 245px; */
+}
+.mix.awesome{
+  margin-left: 20px;
+  width: 20%;
+  /* height: 245px; */
+}
+
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+  width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+/* 3 Columns */
+
+@media screen and (min-width: 541px) {
+  .mix,
+  .gap {
+      width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+  }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 961px) {
+  .mix,
+  .gap {
+      width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+  }
+}
+
+/* 5 Columns */
+
+@media screen and (min-width: 1281px) {
+  .mix,
+  .gap {
+      width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+  }
+}
+
+ /*=====================================================
+ start::portfolio 2 
+ ======================================================*/
+
+
+/*----------------- END::Portfolio page  --------------------- */
+
+
+
