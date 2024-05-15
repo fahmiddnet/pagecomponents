@@ -18,9 +18,9 @@ $(document).ready(function(){
   $('.height-match').matchHeight();
 });
 
-$('.owl-carousel').owlCarousel({
+$('#services-3').owlCarousel({
     loop:true,
-    margin:1,
+    margin:0,
     nav:true,
     responsive:{
         0:{
@@ -33,6 +33,34 @@ $('.owl-carousel').owlCarousel({
             items:4
         }
     }
+})
+$('#mix-carosole').owlCarousel({
+    loop:true,
+    margin:1,
+    nav:true,
+    autoWidth:true,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+$("#top-banner").owlCarousel({
+    nav:true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    items : 1, 
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+
 });
 
 
@@ -49,5 +77,7 @@ $(window).scroll(function() {
 var containerEl = document.querySelector('.mixcontainer');
 
 var mixer = mixitup(containerEl);
+
+
 
 

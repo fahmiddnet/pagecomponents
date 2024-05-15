@@ -60,6 +60,12 @@ input:focus {
 .mb-15{
   margin-bottom: 15px;
 }
+.fh-float-left{
+  float: left;
+}
+.fh-float-right{
+  float: right;
+}
 
 /* text  */
 .title-small{
@@ -1270,8 +1276,10 @@ end::Rectangle-pregress section
 ---------------------------------------------------------------------- */
 
 .mixcontrols {
+  margin-left: 40px;
   padding: 1rem 0;
   font-size: 0.1px;
+  width: 37%;
 }
 
 .mixcontrol {
@@ -1314,17 +1322,14 @@ end::Rectangle-pregress section
 ---------------------------------------------------------------------- */
 
 .mixcontainer {
-  margin-left: -20px;
-  padding: 1rem 0;
-  text-align: start;
-  font-size: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
 }
 
-.mixcontainer:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
 
 /* Target Elements
 ---------------------------------------------------------------------- */
@@ -1337,18 +1342,14 @@ end::Rectangle-pregress section
 }
 
 .mix {
- background: #000000;
  color: #fff;
- /* border-top: .5rem solid currentColor; */
  border-radius: 2px;
  margin-bottom: 1rem;
  position: relative;
 }
 
 .mix.design{
-  margin-left: 20px;
   width: 45%;
-  /* height: 510px; */
 }
 
 /* big card design  */
@@ -1392,7 +1393,7 @@ end::Rectangle-pregress section
 .design-card .card-footer{
   display: flex;
   justify-content: space-between;
-  padding:20px 30px;
+  padding:15px 30px;
 }
 .design-card .card-footer .star{
   color: #21c2f8;
@@ -1469,21 +1470,41 @@ end::Rectangle-pregress section
 
 
 .mix.market{
-  margin-left: 20px;
-  width: 20%;
-  height: auto;
+  width: 22%;
 }
 .mix.adsnetwork{
-  margin-left: 20px;
-  width: 20%;
-  /* height: 245px; */
+  width: 22%;
 }
 .mix.awesome{
-  margin-left: 20px;
-  width: 20%;
-  /* height: 245px; */
+  width: 22%;
 }
-
+.mixit-up-section .owl-nav{
+  /* position: relative; */
+}
+.mixit-up-section .owl-nav .owl-prev,
+.mixit-up-section .owl-nav .owl-next {
+  position: absolute;
+  top: 40%;
+  transform: translate(0,-50%);
+}
+.mixit-up-section .owl-nav span{
+  font-size: 28px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #565555;
+  padding: 0 8px;
+  border-radius: 2px;
+  border: 0.7px solid #e5e6e7;
+}
+.mixit-up-section  .owl-nav .owl-prev{
+  left: -30px;
+}
+.mixit-up-section  .owl-nav .owl-next{
+  right: -30px;
+}
 
 /* Grid Breakpoints
 ---------------------------------------------------------------------- */
@@ -1492,42 +1513,356 @@ end::Rectangle-pregress section
 
 .mix,
 .gap {
-  width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+    width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
 }
 
 /* 3 Columns */
 
 @media screen and (min-width: 541px) {
-  .mix,
-  .gap {
-      width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
-  }
+    .mix,
+    .gap {
+        width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+    }
 }
 
 /* 4 Columns */
 
 @media screen and (min-width: 961px) {
-  .mix,
-  .gap {
-      width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
-  }
+    .mix,
+    .gap {
+        width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+    }
 }
 
 /* 5 Columns */
 
 @media screen and (min-width: 1281px) {
-  .mix,
-  .gap {
-      width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
-  }
+    .mix,
+    .gap {
+        width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+    }
 }
 
+
+/* pagination area  */
+.pagination-area{
+  margin-bottom: 30px;
+}
  /*=====================================================
  start::portfolio 2 
  ======================================================*/
+
+ .mixit-up-section-3 .mixcontrols{
+  margin: 0;
+  width: 100%;
+ }
 
 
 /*----------------- END::Portfolio page  --------------------- */
 
 
 
+/*----------------- START::SHOP page  --------------------- */
+
+/*=========================================================
+ START::SHOP page 1
+ ==========================================================*/
+
+#top-banner .item{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#top-banner .top-banner-img{
+  height: 450px;
+  position: relative;
+}
+
+/* Banner content design start here  */
+.banner-content{
+  position: absolute;
+  right: 250px;
+  top: 30%;
+}
+.banner-content h5{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.banner-content h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.banner-content .hot-price{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 5px solid #767d81;
+  position: relative;
+}
+.banner-content .hot-price h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #33ccff;
+}
+.banner-content .more-info{
+  display: block;
+  text-align: end;
+}
+.banner-content .more-info a{
+  padding: 2px 7px;
+  background-color: #002129;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+}
+.banner-content .more-info a:hover{
+  background-color: #012c36;
+}
+.banner-content .hot-price span{
+  position: absolute;
+  left: 15%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  font-size: 22px;
+  line-height: 28px;
+  color: #33ccff;
+}
+.banner-content .hot-price::after{
+  content: "HOT";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #002129;
+  outline: 1px dashed #fff;
+  outline-offset: 4px;
+  color: #33ccff;
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 400;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Banner content design end here  */
+
+#top-banner .owl-nav{
+  margin: 0;
+}
+#top-banner .owl-nav .owl-prev,
+#top-banner .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+#top-banner .owl-nav span {
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 500;
+	background-color: #8e8e8e;
+	color: #ffffff;
+	padding: 6px 20px;
+  transition: all ease-in-out 0.4s;
+}
+#top-banner .owl-nav span:hover {
+	background-color: #017e94;
+	color: #ffffff;
+}
+#top-banner  .owl-nav .owl-prev{
+  left: 30px;
+}
+#top-banner  .owl-nav .owl-next{
+  right: 30px;
+}
+
+#top-banner .owl-dots {
+	position: absolute;
+  left: 50%;
+  bottom:10px;
+  transform: translate(-50%,0);
+}
+#top-banner .owl-dots .owl-dot span {
+	background: #ffffff;
+}
+#top-banner .owl-dots .owl-dot.active span {
+	background: #21c2f8;
+  border: 2px solid #fff;
+}
+
+.product-catagory-section{
+  padding: 100px 0;
+}
+.product-catagory-section .left-side-catagory{
+  display: flex;
+}
+.left-side-catagory .short-by{
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #d7e2e6;
+  cursor: pointer;
+  color: #000;
+}
+.left-side-catagory span{
+  color: #9aa7af;
+  margin-right: 5px;
+}
+.left-side-catagory .catagory-icon{
+  border: 1px solid #d7e2e6;
+  border-left: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.left-side-catagory .assending{
+  margin-left: 10px;
+}
+.left-side-catagory .assending i{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+  padding: 7px 15px;
+  background-color: #21c2f8;
+  color: #fff;
+  cursor: pointer;
+}
+.left-side-catagory .show,
+.left-side-catagory .choose-by
+{
+  margin-left: 10px;
+  display: inline-block;
+  padding: 10px 30px;
+  border: 1px solid #d7e2e6;
+  cursor: pointer;
+  color: #000;
+}
+.product-catagory-section .view-as i{
+  padding: 12px;
+  border: 1px solid #d7e2e6;
+  cursor: pointer;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 0;
+  margin: 0 5px;
+}
+.product-catagory-section .view-as  .active {
+  background: #21c2f8;
+  color: #fff;
+}
+
+.product-area{
+  padding: 30px 0 50px;
+}
+.product-item{
+  cursor: pointer;
+  border: 1px solid #dfe5e9;
+  margin-bottom: 20px;
+}
+.product-item .img-area{
+  height: 300px;
+  width: 100%;
+  border-bottom: 1px solid #cfd8de;
+  transition: all ease-in-out 0.6s;
+}
+.product-item:hover .img-area{
+  background-color: #dbdbdb;
+}
+.product-item .card-body{
+  padding: 20px; 
+  border-bottom: 1px solid #dfe5e9;
+  transition: all ease-in-out 0.6s;
+}
+.product-item:hover .card-body{
+  background-color: #2f383d;
+}
+.product-item:hover .card-body h3{
+  color: #fff;
+}
+.product-item .card-body h3{
+  font-size: 18px;
+  line-height: 26px;
+  transition: all ease-in-out 0.6s;
+}
+.product-item .card-body span{
+  font-size: 15px;
+  line-height: 25px;
+}
+.product-item .card-body h2{
+  font-size: 30px;
+  line-height: 40px;
+  color: #21c2f8;
+}
+.product-item .card-footer .rating-area{
+  padding: 20px;
+  color: #21c2f8;
+  transition: all ease-in-out 0.6s;
+}
+.product-item:hover .card-footer .rating-area{
+  background-color: #2f383d;
+}
+.product-item .card-footer .add-to-card-area{
+  padding: 12px 20px;
+  background-color: #dfe5e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all ease-in-out 0.6s;
+}
+.product-item:hover .card-footer .add-to-card-area{
+  background-color: #ffffff;
+}
+.product-item:hover .card-footer .add-to-card-area a{
+  color: #21c2f8;
+}
+.product-item .card-footer .add-to-card-area a{
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+  color: #000;
+  transition: all ease-in-out 0.6s;
+}
+.product-item .card-footer .add-to-card-area a:last-child{
+  color: #848484;
+}
+.product-item .card-footer .add-to-card-area i{
+  margin-right: 5px;
+}
+.navigationexample {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.page-item:first-child .page-link {
+  border-radius: 0;
+}
+.page-item:last-child .page-link{
+  border-radius: 0;
+}
+
+/*=========================================================
+ END::SHOP page 1
+ ==========================================================*/
+
+ /*=========================================================
+ START::SHOP page 2
+ ==========================================================*/
+
+ /*=========================================================
+ END::SHOP page 2
+ ==========================================================*/
+
+/*----------------- END::SHOP page  --------------------- */
