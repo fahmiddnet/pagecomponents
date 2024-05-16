@@ -3,19 +3,38 @@ $('.menu-bar-mobile').slicknav({
     prependTo:'.mobilemenu'
 });
 
+
+
+  
 $(document).ready(function(){
-  // For colorbox 
-  // $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-  $(".youtube").colorbox({iframe:true, innerWidth:680, innerHeight:382});
-  //media query for colorbox video.
-  if($(window).width() < 1024){
-  $(".youtube").colorbox({iframe:true, innerWidth:500, innerHeight:300});
-  }
-  if($(window).width() < 767){
-  $(".youtube").colorbox({iframe:true, innerWidth:320, innerHeight:250});
-  }
-  // matchHeight 
-  $('.height-match').matchHeight();
+    const swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    const swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: false,
+        thumbs: {
+            swiper: swiper,
+        },
+        });
+        
+    
+    // For colorbox 
+    // $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+    $(".youtube").colorbox({iframe:true, innerWidth:680, innerHeight:382});
+    //media query for colorbox video.
+    if($(window).width() < 1024){
+    $(".youtube").colorbox({iframe:true, innerWidth:500, innerHeight:300});
+    }
+    if($(window).width() < 767){
+    $(".youtube").colorbox({iframe:true, innerWidth:320, innerHeight:250});
+    }
+    // matchHeight 
+    $('.height-match').matchHeight();
 });
 
 $('#services-3').owlCarousel({
@@ -77,6 +96,7 @@ $(window).scroll(function() {
 var containerEl = document.querySelector('.mixcontainer');
 
 var mixer = mixitup(containerEl);
+
 
 
 

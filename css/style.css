@@ -31,7 +31,8 @@ ul,ol{list-style:none;margin:0;padding:0;}
 ol, ul{padding: 0; margin: 0;}
 
 textarea:focus,
-input:focus {
+input:focus,
+select {
   outline: none;
 }
 
@@ -96,6 +97,7 @@ input:focus {
 
 .navigation{
   background-color: #eff5f7;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 .navigation .title-small {
   margin: 5px 0;
@@ -1711,21 +1713,46 @@ end::Rectangle-pregress section
   display: flex;
 }
 .left-side-catagory .short-by{
-  display: inline-block;
-  padding: 10px 30px;
   border: 1px solid #d7e2e6;
-  cursor: pointer;
-  color: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
+
 .left-side-catagory span{
   color: #9aa7af;
   margin-right: 5px;
 }
+.short-by{
+  position: relative;
+}
+
+
+/* <select> styles */
+select {
+  position: relative;
+  /* Reset */
+  appearance: none;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  /* Personalize */
+  width: 20rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.short-by .select-item::after{
+  content: "\f0dd";
+  font-family: "FontAwsome";
+  font-weight: 900;
+}
+
 .left-side-catagory .catagory-icon{
   border: 1px solid #d7e2e6;
-  border-left: none;
-  padding: 10px 15px;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 .left-side-catagory .assending{
   margin-left: 10px;
@@ -1743,11 +1770,10 @@ end::Rectangle-pregress section
 .left-side-catagory .choose-by
 {
   margin-left: 10px;
-  display: inline-block;
-  padding: 10px 30px;
   border: 1px solid #d7e2e6;
-  cursor: pointer;
-  color: #000;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
 }
 .product-catagory-section .view-as i{
   padding: 12px;
@@ -1806,12 +1832,12 @@ end::Rectangle-pregress section
   line-height: 40px;
   color: #21c2f8;
 }
-.product-item .card-footer .rating-area{
+.product-item .rating-area{
   padding: 20px;
   color: #21c2f8;
   transition: all ease-in-out 0.6s;
 }
-.product-item:hover .card-footer .rating-area{
+.product-item:hover .rating-area{
   background-color: #2f383d;
 }
 .product-item .card-footer .add-to-card-area{
@@ -1858,11 +1884,134 @@ end::Rectangle-pregress section
  ==========================================================*/
 
  /*=========================================================
- START::SHOP page 2
+ START::SHOP product details page 
  ==========================================================*/
+.products-info-section .img-area{
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+.products-info-section .img-area .big-img{
+  width: 100%;
+  height: 320px;
+  border: 1px solid #dfe5e9;
+  margin-bottom: 10px;
+}
+.products-info-section .img-area .bottom-small-img{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.products-info-section .img-area .small-img{
+  width: 100%;
+  height: 100px;
+  border: 1px solid #dfe5e9;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.products-info-section .img-area .small-img.active{
+  border: 1px solid #90e0fb;
+}
+.products-info-section .rating-area{
+  padding: 10px 0;
+  color: #21c2f8;
+}
+.products-info-section .rating-area i:last-of-type{
+  color: #bac0c2;
+}
+.products-info-section .product-content{
+  padding-top: 100px;
+}
+.product-content h2{
+  font-size: 24px;
+  line-height: 34px;
+  color: #2f383d;
+}
+.product-content h4{
+  font-size: 18px;
+  line-height: 26px;
+  color: #848484;
+}
+.product-content span{
+  display: inline-block;
+  font-size: 40px;
+  line-height: 50px;
+  color: #21c2f8;
+  padding: 5px 0;
+  font-weight: 400;
+}
+.product-delivary-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e2e2e2;
+}
+.product-delivary-info .left-area{
+  text-align: center;
+  width: 50%;
+  padding: 15px 0;
+  border-right: 1px solid #e2e2e2;
+}
+.product-delivary-info .right-area{
+  text-align: center;
+  width: 50%;
+  padding: 15px 0;
+  border-right: 1px solid #e2e2e2;
+}
+.product-delivary-info span{
+  font-size: 15px;
+  line-height: 25px;
+  color: #21c2f8;
+}
+
+
+
+
+/* swiper  */
+.swiper-area{
+  padding-top: 100px;
+  position: relative;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 320px;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #33ccff;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* swiper  */
+
 
  /*=========================================================
- END::SHOP page 2
+ END::SHOP product details page 
  ==========================================================*/
 
 /*----------------- END::SHOP page  --------------------- */
