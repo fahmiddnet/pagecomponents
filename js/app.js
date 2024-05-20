@@ -45,6 +45,7 @@ $(document).ready(function(){
     const swiper4 = new Swiper(".mySwiper4", {
         spaceBetween: 10,
         navigation: true,
+        effect: "fade",
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
