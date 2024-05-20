@@ -1683,7 +1683,9 @@ end::Rectangle-pregress section
 /*=====================================================
  start::portfolio 4 
  ======================================================*/
-
+ .portfolio-section-3 .swiper-area{
+  margin-bottom: 40px;
+ }
  .mySwiper4 {
   cursor: cell;
   height: 390px;
@@ -1720,8 +1722,110 @@ end::Rectangle-pregress section
   padding: 10px 15px;
   line-height: 20px;
 }
+.share-project-area{
+  padding: 20px 0;
+}
+.share-project-area h2{
+  margin-bottom: 20px;
+}
+.share-project-area i{
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #6d7a83;
+  cursor: pointer;
+  background-color: #d7dbdd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+}
+.share-project-area i:hover{
+  background-color: #21c2f8;
+  color: #fff;
+}
 
 
+/* form area  */
+.form-area{
+  padding: 40px 0;
+}
+.form-area form{
+  margin-left: -2%;
+}
+.form-area .form-name,
+.form-area .form-email,
+.form-area .form-subject{
+  margin-left: 2%;
+  float: left;
+  width: 31%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-area .form-name i,
+.form-area .form-email i,
+.form-area .form-subject i{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0,-50%);
+  font-size: 15px;
+}
+.form-area .text-area{
+  margin-left: 2%;
+  float: left;
+  width: 97%;
+  margin-bottom: 20px;
+}
+.form-area input,
+.form-area textarea{
+  width: 100%;
+  border: 1px solid #ddd;
+  color: #9aa7af;
+  font-size: 14px;
+}
+.form-area input,
+.form-area textarea{
+  padding: 10px 15px;
+}
+.form-btn {
+  text-align: right;
+}
+.form-btn a{
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #21c2f8;
+  color: #fff;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  transition: all ease-in-out 0.3s;
+}
+.form-btn a:hover{
+  background-color: #0481ab;
+}
+.cards-area{
+  padding: 20px 0 80px;
+}
+.cards-area h2{
+  margin-bottom: 20px;
+}
+.project-description-area ul li {
+  margin-bottom: 5px;
+  position: relative;
+}
+.project-description-area ul li p{
+  position: absolute;
+  left: 30%;
+  top: 0;
+  color: #000;
+}
+.project-description-area ul span{
+  color: #21c2f8;
+}
 /*=====================================================
  end::portfolio 4 
  ======================================================*/
