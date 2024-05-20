@@ -34,6 +34,26 @@ $(document).ready(function(){
             swiper: swiper,
         },
         });
+
+    const swiper3 = new Swiper(".mySwiper3", {
+        spaceBetween: 10,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+
+    const swiper4 = new Swiper(".mySwiper4", {
+        spaceBetween: 10,
+        navigation: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper3,
+        },
+    });
+    
         
         $('#ex1').zoom();
         $('#ex2').zoom({ on:'grab' });

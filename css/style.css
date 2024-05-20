@@ -1677,8 +1677,55 @@ end::Rectangle-pregress section
   display: none;
  }
 /*=====================================================
- start::portfolio 3 
+ end::portfolio 3 
  ======================================================*/
+
+/*=====================================================
+ start::portfolio 4 
+ ======================================================*/
+
+ .mySwiper4 {
+  cursor: cell;
+  height: 390px;
+  width: 100%;
+}
+
+.mySwiper3 {
+  height: 130px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper3 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #33ccff;
+}
+
+.portfolio-section-3 .swiper-button-next:after,
+.portfolio-section-3 .swiper-button-prev:after {
+  background: rgb(44, 45, 48);
+  color: #fff;
+  font-family: swiper-icons;
+  font-size: 13px;
+  text-transform: none!important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  padding: 10px 15px;
+  line-height: 20px;
+}
+
+
+/*=====================================================
+ end::portfolio 4 
+ ======================================================*/
+
 /*----------------- END::Portfolio page  --------------------- */
 
 
@@ -2135,65 +2182,65 @@ select {
 /* swiper  */
 
 
-		/* these styles are for the demo, but are not required for the plugin */
-		.zoom {
-			display:inline-block;
-			position: relative;
-		}
-		
-		/* magnifying glass icon */
-		.zoom:after {
-			content:'';
-			display:block; 
-			width:33px; 
-			height:33px; 
-			position:absolute; 
-			top:0;
-			right:0;
-			background:url(icon.png);
-		}
+/* these styles are for the demo, but are not required for the plugin */
+.zoom {
+  display:inline-block;
+  position: relative;
+}
 
-		.zoom img {
-			display: block;
-		}
+/* magnifying glass icon */
+.zoom:after {
+  content:'';
+  display:block; 
+  width:33px; 
+  height:33px; 
+  position:absolute; 
+  top:0;
+  right:0;
+  background:url(icon.png);
+}
 
-		.zoom img::selection { background-color: transparent; }
+.zoom img {
+  display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
 
 
-    /* item-count_discount-code */
-    .item-count_discount-code{
-      display: flex;
-    }
-    .item-count_discount-code .decrement,
-    .item-count_discount-code .increment{
-      padding: 10px 15px;
-      background-color: #f1f1f1;
-      cursor: pointer;
-    }
-    .item-count_discount-code .count{
-      width: 70px;
-      height: 45px;
-      padding: 0 10px;
-      border:1px solid #f1f1f1;
-      margin: 0 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-    }
-    .item-count_discount-code .discount-cupon{
-      width: 100%;
-      height: 100%;
-      margin-left: 20px;
-    }
-    .item-count_discount-code .discount-cupon input{
-      width: 100%;
-      height: 100%;
-      padding: 10px 15px;
-      font-size: 16px;
-      border: 1px solid #f1f1f1;
-      color: #9aa7af;
-    }
+/* item-count_discount-code */
+.item-count_discount-code{
+  display: flex;
+}
+.item-count_discount-code .decrement,
+.item-count_discount-code .increment{
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.item-count_discount-code .count{
+  width: 70px;
+  height: 45px;
+  padding: 0 10px;
+  border:1px solid #f1f1f1;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.item-count_discount-code .discount-cupon{
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+.item-count_discount-code .discount-cupon input{
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #f1f1f1;
+  color: #9aa7af;
+}
 
 
 /* add to card buttons  */
