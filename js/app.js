@@ -3,6 +3,19 @@ $('.menu-bar-mobile').slicknav({
     prependTo:'.mobilemenu'
 });
 
+var counter = 0;
+
+function plus() {
+  counter+=1;
+  document.getElementById("counter").innerHTML = counter;
+}
+
+function minus() {
+  if(counter > 0){
+    counter-= 1;
+  }
+  document.getElementById("counter").innerHTML = counter;
+}
 
 
   
@@ -22,7 +35,10 @@ $(document).ready(function(){
         },
         });
         
-    
+        $('#ex1').zoom();
+        $('#ex2').zoom({ on:'grab' });
+        $('#ex3').zoom({ on:'click' });			 
+        $('#ex4').zoom({ on:'toggle' });
     // For colorbox 
     // $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
     $(".youtube").colorbox({iframe:true, innerWidth:680, innerHeight:382});
@@ -75,12 +91,14 @@ $("#top-banner").owlCarousel({
     slideSpeed : 300,
     paginationSpeed : 400,
     items : 1, 
-    // itemsDesktop : false,
-    // itemsDesktopSmall : false,
-    // itemsTablet: false,
-    // itemsMobile : false
-
 });
+$(".mititup-slider").owlCarousel({
+    nav:true,
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    items : 1, 
+});
+
 
 
 $(window).scroll(function() {
@@ -97,6 +115,9 @@ var containerEl = document.querySelector('.mixcontainer');
 
 var mixer = mixitup(containerEl);
 
+
+
+$('.list1 .loadMore').loadMoreResults();
 
 
 

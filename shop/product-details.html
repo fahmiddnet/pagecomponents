@@ -60,13 +60,13 @@
                                 <div class="swiper-area">
                                     <div class="swiper mySwiper2">
                                         <div class="swiper-wrapper">
-                                          <div class="swiper-slide">
+                                          <div class="swiper-slide zoom" id='ex1'>
                                             <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
                                           </div>
-                                          <div class="swiper-slide">
+                                          <div class="swiper-slide zoom" id='ex4'>
                                             <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
                                           </div>
-                                          <div class="swiper-slide">
+                                          <div class="swiper-slide zoom" id='ex3'>
                                             <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
                                           </div>
                                         </div>
@@ -110,11 +110,360 @@
                                         <span>Official Copyrite</span>
                                     </div>
                                 </div>
+                                <div class="item-count_discount-code">
+                                    <div class="decrement"  onclick="minus()">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <div class="count" id="counter">
+                                        0
+                                    </div>
+                                    <div class="increment" onclick="plus()">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+
+                                    <div class="discount-cupon">
+                                        <input type="text" name="discount" placeholder="Discount Code Here" id="discount_cupon">
+                                    </div>
+                                </div>
+                                <div class="add-buttons">
+                                    <button class="add-to-cart">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                        <span>Add to cart</span>
+                                    </button>
+                                    <button class="add-to-wishlist">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>Add to Wishlist</span>
+                                    </button>
+                                </div>
+                                <div class="product-catagory__tags">
+                                    <p>Product catagory: <span>Technology</span></p>
+                                    <p>Tags: smart phone, phone, concept, design</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="tabs-area">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                          <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#moreinfo" type="button" role="tab" aria-controls="nav-home" aria-selected="true">More information</button>
+                                          <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#specipication" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                          <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#images" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Images</button>
+                                          <button class="nav-link"  data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Reviews</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="moreinfo" role="tabpanel"  tabindex="0">Integer egestas, orci id condimentum eleifend, nibh nisi pulvinar eros, vitae ornare massa neque ut orci. Nam aliquet lectus sed odio eleifend, at iaculis dolor egestas. Nunc elementum pellentesque augue sodales porta. Etiam aliquet rutrum turpis, feugiat sodales ipsum consectetur nec. Morbi imperdiet lacus nec ante blandit, sit amet fermentum magna faucibus. Nunc nec libero id urna vulputate venenatis. Aenean vulputate odio felis, in rhoncus sapien auctor nec. Donec non posuere sem. Ut quis egestas libero, mattis gravida nibh. Phasellus a nisi ac mi luctus tincidunt et non est. Proin ac orci rhoncus arcu bibendum molestie vel et metus. Aenean iaculis purus et velit iaculis, nec convallis ipsum ornare. Integer a orci enim.</div>
+                                        <div class="tab-pane fade" id="specipication" role="tabpanel"  tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officia, inventore nobis eligendi, totam recusandae nostrum aspernatur sint, ab culpa non sapiente iure? Fugiat in dolorem dicta rem, magni iusto praesentium eligendi, inventore, harum aspernatur nihil? Culpa quidem iste tempora.</div>
+                                        <div class="tab-pane fade" id="images" role="tabpanel"  tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque earum nesciunt aspernatur, nobis corporis natus tempora quaerat, dolores, tempore perspiciatis culpa accusamus vero at voluptas voluptates nisi consequuntur? Ex sed, reprehenderit ducimus autem sunt hic eveniet expedita ipsa sapiente perferendis non nihil, qui minima saepe, explicabo in voluptates? Illum?</div>
+                                        <div class="tab-pane fade" id="reviews" role="tabpanel"  tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat excepturi earum voluptatem sit perferendis reprehenderit ab? Pariatur, quas odit perspiciatis ratione dolor voluptate officia sint eveniet blanditiis ullam repellat voluptatem deserunt dignissimos id explicabo temporibus harum numquam itaque. Perspiciatis, accusamus molestiae qui quasi quibusdam nihil minima modi quis dolor! Maxime corrupti quo quod vero perferendis libero amet fugit aliquid maiores.</div>
+                                    </div>                                      
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="top-product-list-area ">
+                                    <div class="top-text-area">
+                                        <h3>Top Sales</h3>
+                                        <div class="left-right-btn">
+                                            <button><</button>
+                                            <button>></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="img-area">
+
+                                        </div>
+                                        <a href="product-details.html">
+                                            <div class="card-content">
+                                                <div class="card-top-area">
+                                                    <div class="card-title">
+                                                        <h3>Product Name Title Here</h3>
+                                                        <span>$99</span>
+                                                    </div>
+                                                    <div class="circle-offer">
+                                                        sale
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>Proin in ullamcorper lorem. Maecenas eu ipsum eget erat pretium venenatis a eget lacus. Ut at leo ut massa pharetra blandit. Sed cursus vulputate lorem eget faucibus. Etiam facilisis eros a ante vestibulum pharetra facilisis vitae lacus. Cras vel dolor massa. Integer vitae sem non odio placerat hendrerit</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-footer">
+                                            <div class="add-to-cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                                <span>Add to cart</span>
+                                            </div>
+                                            <div class="rating-area">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p>Technology</p>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="img-area">
+
+                                        </div>
+                                        <a href="product-details.html">
+                                            <div class="card-content">
+                                                <div class="card-top-area">
+                                                    <div class="card-title">
+                                                        <h3>Product Name Title Here</h3>
+                                                        <span>$99</span>
+                                                    </div>
+                                                    <div class="circle-offer circle-bg-green">
+                                                        -50%
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>Proin in ullamcorper lorem. Maecenas eu ipsum eget erat pretium venenatis a eget lacus. Ut at leo ut massa pharetra blandit. Sed cursus vulputate lorem eget faucibus. Etiam facilisis eros a ante vestibulum pharetra facilisis vitae lacus. Cras vel dolor massa. Integer vitae sem non odio placerat hendrerit</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-footer">
+                                            <div class="add-to-cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                                <span>Add to cart</span>
+                                            </div>
+                                            <div class="rating-area">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p>Technology</p>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="img-area">
+
+                                        </div>
+                                        <a href="product-details.html">
+                                            <div class="card-content">
+                                                <div class="card-top-area">
+                                                    <div class="card-title">
+                                                        <h3>Product Name Title Here</h3>
+                                                        <span>$99</span>
+                                                    </div>
+                                                    <div class="circle-offer">
+                                                        sale
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p>Proin in ullamcorper lorem. Maecenas eu ipsum eget erat pretium venenatis a eget lacus. Ut at leo ut massa pharetra blandit. Sed cursus vulputate lorem eget faucibus. Etiam facilisis eros a ante vestibulum pharetra facilisis vitae lacus. Cras vel dolor massa. Integer vitae sem non odio placerat hendrerit</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-footer">
+                                            <div class="add-to-cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                                <span>Add to cart</span>
+                                            </div>
+                                            <div class="rating-area">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <p>Technology</p>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="learge-button"><a href="#">Load More Product</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
-                        
+                        <div class="catagory-area">
+                            <div class="input-field">
+                                <input type="text" name="search" id="search" placeholder="Search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="price-filter">
+                                <h3>Filter By Price</h3>
+                            </div>
+                            <div class="catagory-filter">
+                                <div class="item active">
+                                    <p><i class="fa-solid fa-plus"></i> Laptop</p>
+                                    <span>13</span>
+                                </div>
+                                <div class="item">
+                                    <p>
+                                        <i class="fa-solid fa-plus"></i>
+                                         Laptop
+                                    </p>
+                                    <span>13</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> 
+                                        Smart Phone
+                                    </p>
+                                    <span>66</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> 
+                                        Apple Store
+                                    </p>
+                                    <span>85</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> 
+                                        Wordpress Theme
+                                    </p>
+                                    <span>66</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> 
+                                        Web Design
+                                    </p>
+                                    <span>48</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> 
+                                        Sport
+                                    </p>
+                                    <span>26</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> 
+                                        Fashion
+                                    </p>
+                                    <span>13</span>
+                                </div>
+                                <div class="item">
+                                    <p><i class="fa-solid fa-plus"></i> Laptop</p>
+                                    <span>13</span>
+                                </div>
+                            </div>
+                            <div class="tags-widget">
+                                <div class="widget-title">
+                                    <h3>Tages Widget</h3>
+                                </div>
+                                <span>Awesome</span>
+                                <span>Photograhy</span>
+                                <span>Web Design</span>
+                                <span>Infograhic</span>
+                                <span>Guitar</span>
+                                <span>Theme</span>
+                                <span class="active">Website</span>
+                                <span>Artist Design</span>
+                                <span>Themeforest</span>
+                                <span>Music</span>
+                            </div>
+                            <div class="top-rated-product">
+                                <div class="rated-title">
+                                    <h3>Top Rated Product</h3>
+                                </div>
+                                <div class="product-cart">
+                                    <div class="img-area">
+                                        <div class="overflow-img">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-content">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>$199</span>
+                                        <div class="rating-area">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-cart">
+                                    <div class="img-area">
+                                        <div class="overflow-img">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-content">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>$199</span>
+                                        <div class="rating-area">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-cart">
+                                    <div class="img-area">
+                                        <div class="overflow-img">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-content">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>$199</span>
+                                        <div class="rating-area">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-cart">
+                                    <div class="img-area">
+                                        <div class="overflow-img">
+                                            <i class="fa-solid fa-circle-plus"></i>
+                                        </div>
+                                    </div>
+                                    <div class="cart-content">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>$199</span>
+                                        <div class="rating-area">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="smal-btn"><a href="#">More</a></div>
+
+                            </div>
+                            <div class="filter-by-color">
+                                <div class="title">
+                                    <h3>Filter by color</h3>
+                                </div>
+                                <div class="color-piker bg-green"></div>
+                                <div class="color-piker bg-yellow"></div>
+                                <div class="color-piker bg-blue"></div>
+                                <div class="color-piker bg-naviblue"></div>
+                                <div class="color-piker bg-skylight"></div>
+                                <div class="color-piker bg-pink"></div>
+                                <div class="color-piker bg-lightGreen"></div>
+                                <div class="color-piker bg-orange"></div>
+                                <div class="color-piker bg-vaiolate"></div>
+                                <div class="color-piker bg-green"></div>
+                                <div class="color-piker bg-yellow"></div>
+                                <div class="color-piker bg-blue"></div>
+                                <div class="color-piker bg-naviblue"></div>
+                                <div class="color-piker bg-skylight"></div>
+                                <div class="color-piker bg-pink"></div>
+                                <div class="color-piker bg-lightGreen"></div>
+                                <div class="color-piker bg-orange"></div>
+                                <div class="color-piker bg-vaiolate"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -144,6 +493,10 @@
     <script src="../js/jquery.matchHeight-min.js"></script>
     <!-- swiper  -->
     <script src="../js/swiper-bundle.min.js"></script>
+    <!-- Zoom  -->
+    <script src="../js/jquery.zoom.js"></script>
+    <!-- Loadmore  -->
+    <script src="../js/loadMoreResults.js"></script>
     <!-- custom js  -->
     <script src="../js/app.js"></script>
 </body>
