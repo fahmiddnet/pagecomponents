@@ -35,7 +35,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                        <h3 class="title-small">Shoping card</h3>
+                        <h3 class="title-small">Checkout</h3>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
                         <div class="bradcum-area">
@@ -51,9 +51,153 @@
             </div>
         </section>
 
-        
+
+        <section class="chackout-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <h3 class="title-medium">Login</h3>
+                        <div class="login-area">
+                            <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing & Shipping section.</p>
+                            <input type="text" name="name_email" id="name_email" placeholder="Username or Email">
+                            <input type="password" name="password" id="password" placeholder="password">
+                            <div class="btn-small"><a href="#">Login</a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <h3 class="title-medium">Coupon Code</h3>
+                        <div class="cupon-code-area">
+                            <p>Lorem ipsum dolor sit amet,  Sed aliquam felis quis sapien lobortis, sit amet luctus diam adipiscing. Suspendisse non mauris fringilla, rutrum nibh ut, mollis arcu. </p>
+                            <input type="text" name="cupon code" id="cupon code" placeholder="Enter your code">
+                            <div class="btn-small"><a href="#">Apply Coupon</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="biling-addres">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <h3 class="title-medium">Billing Address</h3>
+
+                        <form action="">
+                            <select name="country" id="country">
+                                <option value="vietnam">Vietnam</option>
+                                <option value="vietnam">Vietnam</option>
+                                <option value="vietnam">Vietnam</option>
+                                <option value="vietnam">Vietnam</option>
+                            </select>
+                            <input type="fname" name="fname" id="fname" placeholder="First Name">
+                            <input type="lname" name="lname" id="lname" placeholder="Last Name">
+                            <input type="companyname" name="companyname" id="companyname" placeholder="Company Name">
+                            <input type="address" name="address" id="address" placeholder="Address">
+                            <select name="city" id="city">
+                                <option value="">Town / City</option>
+                                <option value="vietnam">Dhaka</option>
+                                <option value="rajshshi">Rajshahi</option>
+                                <option value="natore">Natore</option>
+                            </select>
+                            <select name="state" id="state">
+                                <option value="">State / Country</option>
+                                <option value="state1">State1</option>
+                                <option value="state2">State2</option>
+                                <option value="state3">State3</option>
+                            </select>
+                            <input type="zipcode" name="zipcode" id="zipcode" placeholder="Postcode / ZIP ">
+                            <input type="fphone" name="fphone" id="fphone" placeholder="Phone">
+                            <input type="lphone" name="lphone" id="lphone" placeholder="Phone">
+                            <input type="checkbox" id="createaccount" name="createaccount" value="createaccount">
+                            <label for="createaccount"> Create an Account</label>
+                        </form>
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <h3 class="title-medium">Shipping Address</h3>
+                        <div class="shiping-address-note">
+                            <div class="chackbox">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1"> Ship to billing address</label><br>
+                            </div>
+                            <textarea name="note" id="note" rows="8" placeholder="Notes about your order,e.g. special notes for delivery."></textarea>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="your-order-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                        <h3 class="title-medium">Your Order</h3>
+                        <div class="your-order-area">
+                            <table width="100%">
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Total</th>
+                                </tr>
+                                <tr>
+                                    <td>Your item title here x 1</td>
+                                    <td>$399</td>
+                                </tr>
+                                <tr>
+                                    <td>Cart Subtotal</td>
+                                    <td>$399</td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping</td>
+                                    <td>Free Shipping</td>
+                                </tr>
+                                <tr>
+                                    <td>Order Total Price</td>
+                                    <td><span>$399</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-system">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm- 12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="payment-methos">
+                            <form action="">
+                                <div class="bankpayment">
+                                    <input type="radio" id="bankTransfer" name="payment" value="bankT">
+                                    <label for="bankTransfer">Direct Bank Transfer</label>
+                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</p>
+                                </div>
+                                <div class="chequepayment">
+                                    <input type="radio" id="chequepayment" name="payment" value="chequepayment">
+                                    <label for="chequepayment">Cheque Payment</label>
+                                </div>
+                                <div class="online-payment">
+                                    <input type="radio" id="online" name="payment" value="online">
+                                    <label for="online">Paypal</label>
+                                    <div class="card-icon">
+                                        <img src="../assets/icons/card.png" alt="cards">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="btn-medium">
+                            <a href="">Place Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+
+  
 
 
 
