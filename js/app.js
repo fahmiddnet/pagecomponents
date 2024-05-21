@@ -4,6 +4,7 @@ $('.menu-bar-mobile').slicknav({
 });
 
 var counter = 0;
+var counter2 = 0;
 
 function plus() {
   counter+=1;
@@ -16,7 +17,18 @@ function minus() {
   }
   document.getElementById("counter").innerHTML = counter;
 }
-
+function plus2() {
+    counter2+=1;
+    document.getElementById("counter2").innerHTML = counter2;
+  }
+  
+  function minus2() {
+    if(counter2 > 0){
+      counter2-= 1;
+    }
+    document.getElementById("counter2").innerHTML = counter2;
+  }
+  
 
   
 $(document).ready(function(){
@@ -119,7 +131,21 @@ $(".mititup-slider").owlCarousel({
     paginationSpeed : 400,
     items : 1, 
 });
-
+$('#product-carosule').owlCarousel({
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
 
 
 $(window).scroll(function() {
