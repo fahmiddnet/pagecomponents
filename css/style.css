@@ -3058,5 +3058,60 @@ width: 47%;
  ==========================================================*/
 
  
+/*=========================================================
+Start::shop chckout order recived page
+==========================================================*/
+.order-recived-section {
+  padding-top: 80px;
+}
+.color-blue{
+  color: #21c2f8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.order-recivedarea h3{
+  font-size: 20px;
+  line-height: 20px;
+}
+.order-recived-card{
+  border: 1px solid #dfe5e9;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+.order-recived-card .order-details h6{
+  float: left;
+  margin-right: 80px;
+  padding-right: 20px;
+  height: auto;
+  margin-bottom: 40px;
+  border-right: 1px solid #dfe5e9
+}
+.order-recived-card .order-details h6:last-of-type{
+  border: 0;
+}
+.order-recived-card h6 span{
+  display: block;
+  padding-top: 10px;
+  color: #000;
+}
+
+.textarea h3,
+.textarea h6{
+    margin-bottom: 20px;
+}
+.textarea h6 span{
+  padding: 10px 0;
+  display: block;
+  color: #21c2f8;
+}
+.order-recived-section .btn-small{
+  text-align: left;
+  margin-bottom: 20px;
+}
+/*=========================================================
+ENDS::shop chckout order recived page
+==========================================================*/
+
+
 
 /*----------------- END::SHOP page  --------------------- */
