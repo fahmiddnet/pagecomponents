@@ -34,7 +34,10 @@
         line-height: 24px;
     }
 
-
+    .search-result .page-link {
+        margin: 0;
+        margin-bottom: 40px;
+    }
     
 
 

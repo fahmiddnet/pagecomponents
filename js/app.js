@@ -66,6 +66,16 @@ $(document).ready(function(){
             swiper: swiper3,
         },
     });
+    const mySwiper_small = new Swiper(".mySwiper-small", {
+        spaceBetween: 1,
+        slidesPerView: 1,
+        freeMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
     
         
         $('#ex1').zoom();
@@ -143,6 +153,23 @@ $('#product-carosule').owlCarousel({
         },
         1000:{
             items:4
+        }
+    }
+});
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
     }
 })
