@@ -35,6 +35,15 @@ input:focus,
 select {
   outline: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: #2f383d;
+  margin-bottom: 10px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -75,17 +84,21 @@ select {
 }
 
 /* text  */
-.title-small{
-  color: #2f383d;
-  font-size: 30px;
-  line-height: 40px;
-  margin-bottom: 10px;
+.title-lg{
+  font-size: 40px;
+  line-height: 50px;
 }
-.title-medium{
-  color: #2f383d;
+.title-md{
+  font-size: 32px;
+  line-height: 40px;
+}
+.title-sm{
+  font-size: 24px;
+  line-height: 32px;
+}
+.title-xs{
   font-size: 18px;
   line-height: 28px;
-  margin-bottom: 10px;
 }
 .title-smaller{
   color: #2f383d;
@@ -94,18 +107,16 @@ select {
   margin-bottom: 10px;
   font-weight: 600;
 }
-.section-padding{
-  padding: 100px 0;
+.section-padding-top{
+  padding-top: 100px;
 }
 
-
-/*------------ '''''''''start::sc-tipography page design'''''''''----------------- */
-
+/*------------ start::Navigation page design for every internal page ----------------- */
 .navigation{
   background-color: #eff5f7;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
-.navigation .title-small {
+.navigation .title-lg {
   margin: 5px 0;
   padding: 15px 0;
   font-weight: 200;
@@ -124,8 +135,9 @@ select {
   padding:  0  5px;
   font-size: 10px;
   line-height: 15px;
+  color: #d0d6d9;
   background-color: #fff;
-  border: 1px solid #999999;
+  border: 1px solid #ddd;
   border-radius: 3px;
   margin: 0 10px;
 }
@@ -135,16 +147,12 @@ select {
 .bradcum-area ul li:nth-last-child(1) a{
   color: #9aa7af;
 }
-.heading-style-area .title-small{
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: 200;
-}
+/*------------ end::Navigation page design for every internal page ----------------- */
 
-/* .default-sample-page {
+/*------------ start::sc-tipography page design ----------------- */
 
-} */
 
+/* default sample page section   */
 .default-sample-page h1,
 .default-sample-page h2,
 .default-sample-page h3,
@@ -178,7 +186,13 @@ select {
 .default-sample-page h6{
   font-size: 13px;
 }
+/* default sample page section   */
 
+/* about more section  */
+.about-more .textarea .title-md{
+  margin-bottom: 40px;
+  font-weight: 300;
+}
 .about-more .textarea strong {
   color: #000;
 }
@@ -187,8 +201,21 @@ select {
 }
 .about-more .textarea p::selection{
   background-color: #21c2f8;
+  color: #fff;
 }
+/* about more section  */
 
+/* dropcaps-section */
+.dropcaps-section .textarea p::first-letter{
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+  float: left;
+  padding:5px;
+}
+/* dropcaps-section */
+
+/* list-section  */
 .bullet-list ol li,
 .bullet-list ul li{
   position: relative;
@@ -262,6 +289,7 @@ select {
   content: counter(step-counter,upper-roman);
   background-color: #000000;
 }
+/* list-section  */
 /*----------------------------------- '''''''''end::sc-tipography page design''''''''' --------------------------------------------- */
 
 
@@ -3260,7 +3288,7 @@ div#myTabContent {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 22px;
-  color: #21c2f8;
+  color: #000000;
 }
 .biling-addres input, select {
   margin-bottom: 0;
