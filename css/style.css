@@ -297,7 +297,7 @@ h6{
 /*-----------------START::Introducting-box page --------------------- */
 .box{
   cursor: pointer;
-  /* margin-bottom: 200px; */
+  /* margin-bottom: 20px; */
 }
 .box:hover h4{
   transition: 0.4s;
@@ -413,12 +413,11 @@ h6{
 }
 
 .owl-carousel-area .owl-carousel .owl-card:hover {
-  background-color: red;
+  /* background-color: red; */
   padding-bottom: 70px;
 }
 
 .owl-carousel-area .owl-carousel .owl-card{
-  background-color: yellow;
   height: 200px;
   margin-top: 50px;
   display: flex;
@@ -738,6 +737,7 @@ start::rectengular-card-hover-effect
   height: 160px;
   width: 100%;
   position: relative;
+  margin-bottom: 20px;
 }
 .rectengular-card-hover-effect .ovarlay{
   opacity: 0;

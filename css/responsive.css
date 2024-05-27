@@ -40,6 +40,11 @@
     }
     
 
+    /* owl nav bar  */
+    .owl-theme .owl-nav {
+        display: none;
+    }
+
 
 }
 
