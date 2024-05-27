@@ -73,6 +73,12 @@ h6{
 .mb-15{
   margin-bottom: 15px;
 }
+.mb-45{
+  margin-bottom: 45px;
+}
+.pd-top-40{
+  padding-top: 40px;
+}
 .fh-float-left{
   float: left;
 }
@@ -1110,7 +1116,7 @@ start::Rectangle-pregress section
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 0;
+  right: -5px;
   border-radius: 50%;
 }
 .rectangle-pregress .progress-bar:hover .popOver{
@@ -1119,7 +1125,7 @@ start::Rectangle-pregress section
 .rectangle-pregress .progress-bar .popOver{
   display: inline;
   position: absolute;
-  right: -15px;
+  right: -20px;
   top: -50px;
   padding: 4px 10px;
   background-color: #21c2f8;
@@ -1442,6 +1448,7 @@ end::Rectangle-pregress section
   color: #000;
   background-color: #eff5f7;
   transition: all ease-in-out .7s;
+  margin-bottom: 20px;
 }
 .mini-card-design:hover{
   color: #eff5f7;
@@ -1749,7 +1756,9 @@ end::Rectangle-pregress section
   line-height: 20px;
 }
 .share-project-area{
+  overflow: auto;
   padding: 20px 0;
+  margin-bottom: 40px;
 }
 .share-project-area h2{
   margin-bottom: 20px;
@@ -1832,9 +1841,6 @@ end::Rectangle-pregress section
 }
 .form-btn a:hover{
   background-color: #0481ab;
-}
-.cards-area{
-  padding: 20px 0 80px;
 }
 .cards-area h2{
   margin-bottom: 20px;

@@ -52,6 +52,24 @@ $(document).ready(function(){
         slidesPerView: 6,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints: {
+            "@0.00": {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+            "@0.75": {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            "@1.00": {
+              slidesPerView: 5,
+              spaceBetween: 10,
+            },
+            "@1.50": {
+              slidesPerView: 6,
+              spaceBetween: 10,
+            },
+          },
     });
 
     const swiper4 = new Swiper(".mySwiper4", {

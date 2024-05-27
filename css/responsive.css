@@ -20,7 +20,30 @@
         font-size: 12px;
         line-height: 22px;
     }
-    
+
+    /* portfolio page 1 */
+    .mixcontrols {
+        margin-left: 30px;
+        width: 60%;
+    }
+    .mixit-up-section-v-2 .mix.design,
+    .mixit-up-section-3 .mix.design{
+        width: 60%;
+    }
+    .mixit-up-section-v-2 .mix.market,
+    .mixit-up-section-3 .mix.market {
+        width: 38%;
+    }
+
+    .mixit-up-section-v-2 .mix.adsnetwork,
+    .mixit-up-section-3 .mix.adsnetwork{
+        width: 38%;
+    }
+
+    .mixit-up-section-v-2 .mix.awesome,
+    .mixit-up-section-3 .mix.awesome{
+        width: 38%;
+    }
 
 
 }
@@ -34,17 +57,62 @@
         line-height: 24px;
     }
 
+    /* Search result page  */
     .search-result .page-link {
         margin: 0;
         margin-bottom: 40px;
     }
     
-
+    /* Introducting box page css   */
     /* owl nav bar  */
     .owl-theme .owl-nav {
         display: none;
     }
 
+    /* contact page 1 css  */
+    .contact-address-area .text-area {
+        margin-left: 0;
+    }
+    
+    /* contact page 2 css  */
+
+    /* contact page 3 css  */
+    .contact-form-block.varsion-3 .form-left-content,
+    .contact-form-block.varsion-3 .form-right-content {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Portfolio page 1  */
+    .mix.design {
+        width: 100%;
+    }
+
+    .mix.market {
+        width: 49%;
+    }
+
+    .mix.adsnetwork {
+        width: 49%;
+    }
+
+    .mix.awesome {
+        width: 49%;
+    }
+
+    .mixcontrols {
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    /* portfolio page 4  */
+    .form-area .form-name, 
+    .form-area .form-email, 
+    .form-area .form-subject {
+        width: 97%;
+    }
 
 }
 
@@ -56,7 +124,18 @@
     body{
         background-color: rgb(238, 255, 0);
     }
-    
+    .mix.design{
+        width: 55%;
+      }
+    .mix.market{
+        width: 40%;
+      }
+      .mix.adsnetwork{
+        width: 40%;
+      }
+      .mix.awesome{
+        width:40%;
+      }
 
 }
 
