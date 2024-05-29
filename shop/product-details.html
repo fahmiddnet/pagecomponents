@@ -55,6 +55,7 @@
         <div class="products-info-section">
             <div class="container">
                 <div class="row">
+
                     <div class="col-12 col-sm-12 col-md-7 col-lg-9 col-xl-9 col-xxl-9">
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7 col-xxl-7">
@@ -293,15 +294,35 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
                         <div class="catagory-area">
+                            
                             <div class="input-field">
                                 <input type="text" name="search" id="search" placeholder="Search">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
+
                             <div class="price-filter">
                                 <h3>Filter By Price</h3>
+                                <div class="wrapper">
+                                    <div class="slider-track"></div>
+                                    <input type="range" min="0" max="1200" value="0" id="slider-1" oninput="slideOne()">
+                                    <input type="range" min="0" max="1200" value="999" id="slider-2" oninput="slideTwo()">
+                                </div>
+                                <div class="range-value">
+                                    <span>Price: </span>
+                                    $<span id="range1">
+                                        0
+                                    </span>
+                                    <span>&dash;</span>
+                                    $<span id="range2">
+                                        100
+                                    </span>
+                                </div>
+                                <div class="btn-small"><a href="#">Filter</a></div>
                             </div>
+
                             <div class="catagory-filter">
                                 <h3>Categories Widget</h3>
                                 <div class="item active">
@@ -356,6 +377,7 @@
                                     <span>13</span>
                                 </div>
                             </div>
+
                             <div class="tags-widget">
                                 <div class="widget-title">
                                     <h3>Tages Widget</h3>
@@ -371,6 +393,7 @@
                                 <span>Themeforest</span>
                                 <span>Music</span>
                             </div>
+
                             <div class="top-rated-product">
                                 <div class="rated-title">
                                     <h3>Top Rated Product</h3>
@@ -454,6 +477,7 @@
                                 <div class="smal-btn"><a href="#">More</a></div>
 
                             </div>
+
                             <div class="filter-by-color">
                                 <div class="title">
                                     <h3>Filter by color</h3>
@@ -477,8 +501,10 @@
                                 <div class="color-piker bg-orange"></div>
                                 <div class="color-piker bg-vaiolate"></div>
                             </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -489,6 +515,46 @@
     </footer>
 
 
+    <!-- local  -->
+    <script>
+        window.onload = function() {
+            slideOne();
+            slideTwo();
+        }
+        let sliderOne = document.getElementById("slider-1");
+        let sliderTwo = document.getElementById("slider-2");
+        let displayValueOne = document.getElementById("range1");
+        let displayValueTwo = document.getElementById("range2");
+
+        let  minGap = 0;
+        let sliderTrack = document.querySelector(".slider-track");
+        let sliderMaxValue = document.getElementById("slider-1").max;
+
+        function slideOne(){
+            if(parseInt(sliderTwo.value) - parseInt 
+            (sliderOne.value) <= minGap){
+                sliderOne.value = parseInt(sliderTwo.value) - minGap;
+            }
+            displayValueOne.textContent = sliderOne.value;
+            fillColor();
+        }
+
+        function slideTwo(){
+            if(parseInt(sliderTwo.value) - parseInt (sliderOne.value) <= minGap){
+                sliderTwo.value = parseInt(sliderOne.value) + minGap;
+            }
+            displayValueTwo.textContent = sliderTwo.value;
+            fillColor();
+        }
+
+        function fillColor(){
+            percent1 = (sliderOne.value / sliderMaxValue ) * 100;
+            percent2 = (sliderTwo.value / sliderMaxValue ) * 100;
+            sliderTrack.style.background = `linear-gradient(to right,  #dadae5 ${percent1}%, #21c2f8 ${percent1}%, #21c2f8 ${percent2}%, #dadae5 ${percent2}%)`;
+            // console.log(percent1, percent2);
+        }
+
+    </script>
     <!-- jQuery -->
     <script src="../js/jquery.min.js"></script>
     <!-- Bootstrap -->

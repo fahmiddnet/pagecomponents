@@ -3,6 +3,16 @@ $('.menu-bar-mobile').slicknav({
     prependTo:'.mobilemenu'
 });
 
+
+
+
+
+
+
+
+
+
+
 var counter = 0;
 var counter2 = 0;
 
@@ -28,7 +38,29 @@ function plus2() {
     }
     document.getElementById("counter2").innerHTML = counter2;
   }
+
+//   const gridButton = document.getElementById("grid-btn");
+//   const listButton = document.getElementById("list-btn");
+//   const gridProducts = document.getElementById("show-grid-item");
+//   const listProducts = document.getElementById("show-list-item");
   
+//   const toggleView = (viewType) => {
+//     gridButton.classList.toggle("active", viewType === "grid");
+//     listButton.classList.toggle("active", viewType === "list");
+  
+//     gridProducts.style.display = viewType === "grid" ? "block" : "none";
+//     listProducts.style.display = viewType === "list" ? "block" : "none";
+//   };
+  
+//   gridButton.addEventListener("click", () => toggleView("grid"));
+//   listButton.addEventListener("click", () => toggleView("list"));  
+  
+
+
+
+
+
+
 
   
 $(document).ready(function(){
@@ -38,7 +70,7 @@ $(document).ready(function(){
         freeMode: true,
         watchSlidesProgress: true,
     });
-
+    
     const swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
         navigation: false,
@@ -46,7 +78,7 @@ $(document).ready(function(){
             swiper: swiper,
         },
         });
-
+    
     const swiper3 = new Swiper(".mySwiper3", {
         spaceBetween: 10,
         slidesPerView: 6,
@@ -71,7 +103,7 @@ $(document).ready(function(){
             },
           },
     });
-
+    
     const swiper4 = new Swiper(".mySwiper4", {
         spaceBetween: 10,
         navigation: true,
@@ -93,13 +125,11 @@ $(document).ready(function(){
             prevEl: ".swiper-button-prev",
         },
     });
+    $('#ex1').zoom();
+    $('#ex2').zoom({ on:'grab' });
+    $('#ex3').zoom({ on:'click' });			 
+    $('#ex4').zoom({ on:'toggle' });
 
-    
-        
-        $('#ex1').zoom();
-        $('#ex2').zoom({ on:'grab' });
-        $('#ex3').zoom({ on:'click' });			 
-        $('#ex4').zoom({ on:'toggle' });
     // For colorbox 
     // $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
     $(".youtube").colorbox({iframe:true, innerWidth:680, innerHeight:382});
@@ -208,8 +238,13 @@ var containerEl = document.querySelector('.mixcontainer');
 var mixer = mixitup(containerEl);
 
 
-
 $('.list1 .loadMore').loadMoreResults();
+
+
+
+
+
+
 
 
 

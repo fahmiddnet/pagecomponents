@@ -134,8 +134,8 @@
 
                             <div class="view-as fh-float-right">
                                 <span>View as:</span>
-                                <i class="fa-solid fa-list"></i>
-                                <i class="fa-solid fa-table-cells-large active"></i>
+                                <i id="list-btn" class="fa-solid fa-list"></i>
+                                <i id="grid-btn" class="fa-solid fa-table-cells-large active"></i>
                             </div>
                         </div>
                     </div>
@@ -143,461 +143,715 @@
 
                     <hr>
 
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
+                    <div id="show-grid-item" class="grid-item">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                    <div id="show-list-item" class="list-item">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                        <div class="product-item">
-                            <a href="product-details.html">
-                            <div class="img-area">
-                            </div>
-                            <div class="card-body">
-                                <h3>Product Name Title Here</h3>
-                                <span>Fashion</span>
-                                <h2>$99</h2>
-                            </div>
-                            <div class="rating-area">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            </a>
-                            <div class="card-footer">
-                                <div class="add-to-card-area">
-                                    <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
-                                    <a href="product-details.html">More</a>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="product-item">
+                                    <a href="product-details.html">
+                                    <div class="img-area">
+                                    </div>
+                                    <div class="card-body">
+                                        <h3>Product Name Title Here</h3>
+                                        <span>Fashion</span>
+                                        <h2>$99</h2>
+                                    </div>
+                                    <div class="rating-area">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    </a>
+                                    <div class="card-footer">
+                                        <div class="add-to-card-area">
+                                            <a href="#"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+                                            <a href="product-details.html">More</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -614,6 +868,29 @@
     </footer>
 
 
+    <!-- local -->
+    <script>
+        var grid_show = document.getElementById("grid-btn");
+        var list_show = document.getElementById("list-btn");
+        var show_grid_product =document.getElementById("show-grid-item");
+        var show_list_product =document.getElementById("show-list-item");
+
+        grid_show.addEventListener("click", gridview);
+        list_show.addEventListener("click", listView)
+
+        function gridview(){
+        list_show.classList.remove("active");
+        grid_show.classList.add("active");
+        show_list_product.style.display="none";
+        show_grid_product.style.display="block";
+        }
+        function listView(){
+        grid_show.classList.remove("active");
+        list_show.classList.add("active");
+        show_grid_product.style.display="none";
+        show_list_product.style.display="block";
+        }
+    </script>
     <!-- jQuery -->
     <script src="../js/jquery.min.js"></script>
     <!-- Bootstrap -->
