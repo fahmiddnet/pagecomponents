@@ -2494,11 +2494,29 @@ select {
   top: -5px;
 }
 
-
+.top-product-list-area .owl-dots{
+  display: none;
+}
+.top-product-list-area.owl-theme .owl-nav  {
+  position: absolute;
+  margin-top: 45px;
+  top: 0;
+  right: 0;
+}
+.top-product-list-area.owl-theme .owl-nav button span{
+  padding: 4px 15px;
+  background: #e1e4e7;
+  color: #6c767d;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.top-product-list-area.owl-theme .owl-nav button span:hover{
+  background-color: #21c2f8;
+  color: #fff;
+}
 .top-product-list-area .top-text-area{
   padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
 }
 .top-product-list-area .top-text-area .left-right-btn button{
     padding: 10px;
@@ -2715,12 +2733,30 @@ input[type="range"]:active::-webkit-slider-thumb{
 /* ----------------- 
 catagory filter here  
  -------------------  */
-
-
-.catagory-filter .item{
+ .catagory-filter{
+  padding: 50px 0;
+  position: relative;
+ }
+ .catagory-filter .item{
   display: flex;
   justify-content: space-between;
 }
+.catagory-filter ul{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.catagory-filter ul li{
+  padding: 4px 0;
+  cursor: pointer;
+}
+.sub-item{
+  display: none;
+}
+.catagory-filter ul li ul li{
+  margin:0 20px;
+}
+
 .catagory-filter .item p{
   color: #b3bdc3;
 }
@@ -2741,6 +2777,8 @@ catagory filter here
 .catagory-filter .item.active p{
   color: #21c2f8;
 }
+
+/* tags widget  */
 .catagory-area .tags-widget .widget-title{
   padding: 20px 0;
 }
@@ -2755,7 +2793,7 @@ catagory filter here
 .catagory-area .tags-widget .active{
   background-color: #21c2f8;
   color: #fff;
-}
+} 
 
 
 /* top-rated-product  */

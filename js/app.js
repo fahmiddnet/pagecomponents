@@ -209,6 +209,8 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    animateIn: 'fadeIn',
+    // animateOut: 'fadeOut',
     responsive:{
         0:{
             items:1
